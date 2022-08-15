@@ -98,13 +98,13 @@ function showCompletedHandler(){
     displayCounter(count);
 }
 
-function markAllCompletedHandler(e){
-    taskList.innerHTML = "";
-    tasks.forEach(task => {
-        task.isDone = true;
-        task.createIn(taskList);
-    })
-}
+// function markAllCompletedHandler(e){
+//     taskList.innerHTML = "";
+//     tasks.forEach(task => {
+//         task.isDone = true;
+//         task.createIn(taskList);
+//     })
+// }
 
 function sort(){
     taskList.innerHTML = "";
