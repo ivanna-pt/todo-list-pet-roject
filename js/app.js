@@ -182,6 +182,8 @@ class Task {
         if (index !== -1){
             tasks.splice(index, 1);
         }
+        let count = tasks.length;
+        displayCounter(count);
     }
 }
 
