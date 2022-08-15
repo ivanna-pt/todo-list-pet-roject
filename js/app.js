@@ -20,15 +20,15 @@ filter.addEventListener("click", function (e){
     switch (e.target.innerText){
         case "All":
             showAllHandler();
-            addSelectedClass(e)
+            addSelectedClass(e);
             break;
         case "Active":
             showActiveHandler();
-            addSelectedClass(e)
+            addSelectedClass(e);
             break;
         case "Completed":
             showCompletedHandler();
-            addSelectedClass(e)
+            addSelectedClass(e);
             break;
     }
 })
@@ -58,6 +58,17 @@ function addSelectedClass(element){
     }
     element.target.classList.toggle("selected");
 }
+//Another way to change css properties of selected item
+// function makeSelected(element){
+//     document.querySelectorAll(".filter-item").forEach(item => {
+//         item.style.color = '#000000';
+//         item.style.fontWeight = '400';
+//     })
+//
+//     element.target.style.color = '#1a64d6';
+//     element.target.style.fontWeight = '700';
+// }
+
 
 function displayCounter(count){
     counter.textContent = count;
@@ -71,7 +82,7 @@ function showAllHandler(){
         count++;
     })
     displayCounter(count);
-    console.log(count);
+    
 }
 
 function showActiveHandler() {

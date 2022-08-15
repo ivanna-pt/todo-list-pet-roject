@@ -202,9 +202,13 @@ footer{
     justify-content: space-between;
 }
 
+.filter-nav>div{
+    transition: all .2s ease-in-out;
+}
+
 .filter-item{
     margin-right: 20px;
-    transition: all .2s ease-in;
+    transition: all .2s ease-in-out;
 }
 
 .filter-item:last-child{
@@ -219,6 +223,7 @@ footer{
 .selected{
     color: #1a64d6;
     font-weight: 700;
+    transition: all .2s ease-in-out;
 }
 
 .counter{
