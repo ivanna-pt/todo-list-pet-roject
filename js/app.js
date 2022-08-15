@@ -72,7 +72,7 @@ function showAllHandler(){
     })
     displayCounter(count);
     console.log(count);
-};
+}
 
 function showActiveHandler() {
     let count = 0;
@@ -84,7 +84,7 @@ function showActiveHandler() {
             count++;
         })
     displayCounter(count);
-};
+}
 
 function showCompletedHandler(){
     let count = 0;
@@ -167,7 +167,7 @@ class Task {
             icon.classList.remove("fa-regular");
             icon.classList.remove("fa-circle");
             icon.classList.add("fa-solid");
-            icon.classList.toggle("fa-circle-check", true);
+            icon.classList.add("fa-circle-check");
         } else {
             icon.classList.toggle("fa-regular", true);
             icon.classList.toggle("fa-circle",true);
