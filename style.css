@@ -96,9 +96,8 @@ header{
 }
 
 .add-item input{
-    width: 100%;
-    margin-left: 10px;
-    padding-left: 10px;
+    width: 90%;
+    margin-left: 15px;
     background-color: transparent;
     border: none;
     font-size: 20px;
